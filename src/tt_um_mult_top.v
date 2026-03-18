@@ -15,13 +15,13 @@ wire _unused = &{uio_in};
 
 //A, B, P
 reg [3:0] A, B;
-wire [7:0] P;
+wire [7:0] S;
 
 //add multiplier
-mult MULT (.A(A), .B(B), .P(P));
+mult MULT (.A(A), .B(B), .S(S));
 
 //assign outputs
-assign uo_out = P;
+assign uo_out = S;
 assign uio_out = {8{1'b0}};
 assign uio_oe = {8{1'b0}};
 
