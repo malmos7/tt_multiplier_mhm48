@@ -18,7 +18,7 @@ reg [3:0] A, B;
 wire [7:0] S;
 
 //add multiplier
-mult MULT (.A(A), .B(B), .P(S));
+mult MULT (.A(A), .B(B), .S(S));
 
 //assign outputs
 assign uo_out = S;
